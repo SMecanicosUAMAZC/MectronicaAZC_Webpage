@@ -1,0 +1,92 @@
+@font-face {
+  font-family: FuenteUAMAZCNormal;
+  src: url(Frutiger\ CE\ 45\ Light.ttf);
+}
+
+@font-face {
+  font-family: FuenteUAMAZCRO;
+  src: url(Frutiger\ CE\ 55\ Roman.ttf);
+}
+
+@font-face {
+  font-family: FuenteUAMAZCNegrita;
+  src: url(Frutiger\ CE\ 65\ Bold.ttf);
+}
+
+* {
+  
+  box-sizing: border-box;
+}
+
+.cabeceraprincipal{
+  width: 100%;
+}
+/* -------------------------------------------------------- */
+.barramenu {
+  
+  margin-left: 50%;
+  background-color: #d22730;
+  font-size: 20px;
+  margin-top: 40px;
+  padding: 0%;
+  font-family: FuenteUAMAZCNegrita;
+  position:fixed;
+  top: 0;
+  
+}
+
+.menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+  display: block;
+  padding: 0px 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+  background-color: red;
+}
+
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: auto;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+  display: block;
+}
+
+.menu-vertical li:hover{
+  background-color: black;
+}
+
+.menu-vertical li a{
+  display: block;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+
+
+
+
+ 
+  
+  
+
+  .piepagina{
+    background: #d22730;
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 18px;
+  }
+
+ 

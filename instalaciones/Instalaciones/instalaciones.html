@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instalaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header.header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #f0f0f0;
+        }
+
+        header.header-container img {
+            width: 250px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: #bd0003; /* Cambio de color a #bd0003 */
+            margin: 80px 20px 20px; /* Ajusta el margen superior */
+            text-align: center; /* Centra el título */
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 20px; /* Ajusta el margen para centrar la galería */
+        }
+
+        .imagen-container {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        img {
+            width: 250px; /* Ajusta el ancho de las imágenes */
+            height: 200px;
+            object-fit: cover; /* Asegura que la imagen mantenga su aspecto */
+            border-radius: 5px; /* Opcional: redondea las esquinas de las imágenes */
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0; /* Posición en la parte inferior de la imagen */
+            left: 0;
+            width: 100%; /* Ancho completo de la imagen */
+            background-color: rgba(189, 0, 3, 0.5); /* Cambio de color a #bd0003 semi-transparente */
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 0 0 5px 5px; /* Opcional: redondear las esquinas inferiores */
+        }
+
+        .overlay a {
+            color: white; /* Color del enlace */
+            text-decoration: none; /* Quita el subrayado del enlace */
+        }
+
+        .overlay a:hover {
+            text-decoration: underline; /* Subrayado al pasar el mouse sobre el enlace */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con los logos y el título centrado -->
+    <header class="header-container">
+        <!-- Logo izquierdo -->
+        <img src="logo_azcapo.png" alt="Logo izquierdo">
+        
+        <!-- Título centrado -->
+        <div class="title">Área de mecánica y mecatrónica</div>
+        
+        <!-- Logo derecho -->
+        <img src="cabezal_V16.png" alt="Logo derecho">
+    </header>
+
+    <h1>Instalaciones</h1>
+
+    <div class="galeria">
+        <div class="imagen-container">
+            <img src="AreaMecanica1.jpeg" alt="Imagen del laboratorio 1">
+            <div class="overlay"><a href="pagina1.html">Área Mecanica</a></div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="lab1.jpeg" alt="Imagen del laboratorio 2">
+            <div class="overlay"><a href="pagina2.html">Laboratorio 1</a></div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="lab2.jpeg" alt="Imagen del laboratorio 3">
+            <div class="overlay"><a href="pagina3.html">Laboratorio 2</a></div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="sala.jpeg" alt="Imagen del laboratorio 4">
+            <div class="overlay"><a href="pagina4.html">Sala</a></div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="taller1.jpeg" alt="Imagen del laboratorio 5">
+            <div class="overlay"><a href="pagina5.html">Taller 1</a></div>
+        </div>
+
+        <div class="imagen-container">
+            <img src="taller2.jpeg" alt="Imagen del laboratorio 6">
+            <div class="overlay"><a href="pagina6.html">Taller 2</a></div>
+        </div>
+    </div>
+</body>
+</html>
+

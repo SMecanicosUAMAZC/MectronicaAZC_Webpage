@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>Académicos del Área</title>
+    <style>
+        .academicos {
+            text-align: center;
+        }
+        .academico {
+            display: inline-block;
+            background-color: #bd0003;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .academico:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .imagen-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 1.2em;
+            margin: 0;
+            text-align: center;
+            color: red;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        h2:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 2px;
+            background-color: #cecece;
+        }
+        a {
+            color: #cecece; /* Color para los enlaces normales */
+            text-decoration: none; /* Elimina el subrayado por defecto */
+        }
+
+        a:hover {
+            color: #be9c5a; /* Color para los enlaces al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-shadow: 2px 2px 4px #888;">ACADÉMICOS</h1>
+    </header>
+    <section class="academicos">
+        <div class="academico">
+            <img class="imagen-perfil" src="ejem.png" alt="Foto de perfil">
+            <h2 class="nombre"><a href="pagina_remy_perez.html">Ing. Romy Perez Moreno</a></h2>
+        </div>
+
+        <div class="academico">
+            <img class="imagen-perfil" src="ejem.png" alt="Foto de perfil">
+            <h2 class="nombre"><a href="pagina-Francisco.html">Dr. Francisco Bentral Carbajal</a></h2>
+        </div>
+
+        <div class="academico">
+            <img class="imagen-perfil" src="ejem.png" alt="Foto de perfil">
+            <h2 class="nombre"><a href="pagina-Zeferino.html">Dr. Zeferino Damian Noriega</a></h2>
+        </div>
+
+        <div class="academico">
+            <img class="imagen-perfil" src="ejem.png" alt="Foto de perfil">
+            <h2 class="nombre"><a href="pagina-Ivan.html">Dr. Iván González Uribe</a></h2>
+        </div>
+
+        <div class="academico">
+            <img class="imagen-perfil" src="ejem.png" alt="Foto de perfil">
+            <h2 class="nombre"><a href="pagina-Israel.html">Dr. Israel Barregón Santiago</a></h2>
+        </div>
+
+        <div class="academico">
+            <img class="imagen-perfil" src="ejem.png" alt="Foto de perfil">
+            <h2 class="nombre"><a href="pagina-Gilberto.html">M. en C. Gilberto Domingo Alvarez Miranda</a></h2>
+        </div>
+    </section>
+</body>
+</html>

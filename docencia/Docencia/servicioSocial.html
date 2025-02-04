@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SErvicio social</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fondo general de la página */
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px; /* Ajusta el espaciado alrededor del encabezado */
+            background-color: #f0f0f0;
+        }
+
+        .header-container img {
+            width: 250px; /* Ajusta el tamaño de las imágenes de los logos */
+            height: auto; /* Mantiene la proporción original */
+            object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+        }
+
+        .title {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 28px; /* Aumenta el tamaño del título */
+            font-weight: bold;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        section {
+            background-color: #ffffff; /* Fondo blanco para secciones */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            margin: 20px auto; /* Margen automático para centrar horizontalmente */
+            padding: 20px;
+            max-width: 800px; /* Ancho máximo de las secciones */
+        }
+
+        h2 {
+            color: #bd0003;
+            text-align: center; /* Centra los títulos */
+        }
+
+        p {
+            text-align: justify; /* Justifica el texto para una mejor alineación */
+            line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Para evitar espacios entre bordes */
+            margin: 20px 0; /* Espacio alrededor de la tabla */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Bordes suaves para las celdas */
+            padding: 10px;
+            text-align: center; /* Centra el texto dentro de las celdas */
+        }
+
+        th {
+            background-color: #f4f4f4; /* Fondo gris claro para los encabezados */
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con los logos y el título centrado -->
+    <header class="header-container">
+        <!-- Logo izquierdo -->
+        <img src="logo_azcapo.png" alt="Logo izquierdo">
+        
+        <!-- Título centrado -->
+        <div class="title">Área de mecánica y mecatrónica</div>
+        
+        <!-- Logo derecho -->
+        <img src="cabezal_V16.png" alt="Logo derecho">
+    </header>
+    <main>
+        <section id="información-general">
+            <h2>Información general</h2>
+            <p>Se entiende por Servicio Social el conjunto de actividades realizadas por los alumnos o egresados de la Universidad en beneficio de la sociedad y el Estado, con la finalidad de contribuir en el desarrollo económico, político, social y cultural de nuestro país. La realización del servicio social es obligatoria y deberá ser realizado como requisito previo para obtener el título de licenciatura.</p>
+            <p>La legislación de la Universidad Autónoma Metropolitana establece que la duración de la realización del servicio social será de 480 horas, en un tiempo no menor de seis meses ni mayor de 2 años.</p>
+            <p>La oficina de servicio social es la encargada de realizar todos los trámites administrativos para que puedas acreditar tu servicio social.</p>
+        </section>
+        <section id="proyectos-activos">
+            <h2>Proyectos Activos</h2>
+            <table>
+                <tr>
+                    <th>Proyecto</th>
+                    <th>Descripción</th>
+                    <th>Responsable</th>
+                </tr>
+                <tr>
+                    <td><a href="proyecto1.html">Proyecto 1</a></td>
+                    <td>Descripción del proyecto 1</td>
+                    <td>Profesor 1</td>
+                </tr>
+                <tr>
+                    <td><a href="proyecto2.html">Proyecto 2</a></td>
+                    <td>Descripción del proyecto 2</td>
+                    <td>Profesor 2</td>
+                </tr>
+                <tr>
+                    <td><a href="proyecto3.html">Proyecto 3</a></td>
+                    <td>Descripción del proyecto 3</td>
+                    <td>Profesor 3</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 1</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fondo general de la página */
+        }
+
+        header.header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            max-width: 1200px; /* Máximo ancho del encabezado */
+            margin: 0 auto; /* Centrar el encabezado */
+        }
+
+        header.header-container img {
+            width: 250px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: #bd0003;
+            margin: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px; /* Máximo ancho del contenido principal */
+            margin: 0 auto; /* Centrar el contenido principal */
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #bd0003; /* Subtítulos en rojo */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .responsable-container {
+            display: flex;
+            align-items: center; /* Alinear verticalmente */
+            gap: 20px; /* Espacio entre la imagen y el texto */
+        }
+
+        .responsable-container img {
+            width: 150px; /* Tamaño reducido de la foto */
+            height: auto;
+            border-radius: 50%; /* Opcional: para redondear la foto */
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con los logos y el título centrado -->
+    <header class="header-container">
+        <!-- Logo izquierdo -->
+        <img src="logo_azcapo.png" alt="Logo izquierdo">
+        
+        <!-- Título centrado -->
+        <div class="title">Área de mecánica y mecatrónica</div>
+        
+        <!-- Logo derecho -->
+        <img src="cabezal_V16.png" alt="Logo derecho">
+    </header>
+
+    <h1>Laboratorio 1</h1>
+
+    <main>
+        <section>
+            <h2>Ubicación</h2>
+            <p>[Dirección completa del laboratorio]</p>
+        </section>
+
+        <section>
+            <h2>Horario de Atención</h2>
+            <table>
+                <tr>
+                    <th>Día</th>
+                    <th>Hora de Apertura</th>
+                    <th>Hora de Cierre</th>
+                </tr>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>[Hora]</td>
+                    <td>[Hora]</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Guía de Uso, Requisitos y Especificaciones</h2>
+            <p>[Describe aquí las reglas y procedimientos del laboratorio]</p>
+        </section>
+
+        <section>
+            <h2>Responsable</h2>
+            <div class="responsable-container">
+                <img src="ejem.png" alt="Foto del responsable">
+                <div>
+                    <h3>[Nombre del responsable]</h3>
+                    <p>
+                        <strong>Contacto:</strong> [Teléfono, correo electrónico]
+                        <br>
+                        <strong>Horario:</strong> [Horario específico del responsable]
+                        <br>
+                        <strong>Turno:</strong> [Matutino, vespertino, etc.]
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Puedes agregar contenido en el pie de página si es necesario -->
+    </footer>
+</body>
+</html>

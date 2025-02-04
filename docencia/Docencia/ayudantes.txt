@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ayudantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fondo general de la página */
+        }
+
+        header.header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #f0f0f0;
+        }
+
+        header.header-container img {
+            width: 250px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: #bd0003;
+            margin: 20px 20px 20px; /* Reduce el margen superior */
+            text-align: left;
+        }
+
+        .ayudantes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .ayudante {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 280px; /* Aumentar el ancho de los cuadros */
+            text-align: left;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+        }
+
+        .avatar {
+            width: 60px; /* Aumentar el tamaño del avatar */
+            height: 60px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-right: 15px;
+            border: 2px solid #bd0003;
+        }
+
+        .nombre {
+            color: #bd0003;
+            font-weight: bold;
+        }
+
+        .informacion {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con los logos y el título centrado -->
+    <header class="header-container">
+        <!-- Logo izquierdo -->
+        <img src="logo_azcapo.png" alt="Logo izquierdo">
+        
+        <!-- Título centrado -->
+        <div class="title">Área de mecánica y mecatrónica</div>
+        
+        <!-- Logo derecho -->
+        <img src="cabezal_V16.png" alt="Logo derecho">
+    </header>
+
+    <h1>Ayudantes</h1>
+
+    <div class="ayudantes">
+        <div class="ayudante">
+            <img src="ejem.png" alt="Avatar" class="avatar">
+            <div>
+                <p class="nombre">Elías Sánchez Martínez</p>
+                <p class="informacion">Correo: sanchezelias19@hotmail.com</p>
+                <p>Agregar texto</p>
+            </div>
+        </div>
+        <div class="ayudante">
+            <img src="ejem.png" alt="Avatar" class="avatar">
+            <div>
+                <p class="nombre">Iván Alcántara Martínez</p>
+                <p class="informacion">Correo: i.v.a.n.303830@gmail.com</p>
+                <p>Agregar texto</p>
+            </div>
+        </div>
+        <div class="ayudante">
+            <img src="ejem.png" alt="Avatar" class="avatar">
+            <div>
+                <p class="nombre">José Carlos Hernández López</p>
+                <p class="informacion">Información de contacto</p>
+                <p>Agregar texto</p>
+            </div>
+        </div>
+        <div class="ayudante">
+            <img src="ejem.png" alt="Avatar" class="avatar">
+            <div>
+                <p class="nombre">Israel Tenorio Peralta</p>
+                <p class="informacion">Información de contacto</p>
+                <p>Agregar texto</p>
+            </div>
+        </div>
+        <div class="ayudante">
+            <img src="ejem.png" alt="Avatar" class="avatar">
+            <div>
+                <p class="nombre">Israel Cruz Castañela</p>
+                <p class="informacion">Correo: israelcruzca@yahoo.com.mx</p>
+                <p>Agregar texto</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

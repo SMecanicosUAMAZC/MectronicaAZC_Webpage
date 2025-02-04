@@ -1,0 +1,251 @@
+@font-face {
+    font-family: FuenteUAMAZCNormal;
+    src: url(../../Frutiger\ CE\ 45\ Light.ttf);
+  }
+  
+  @font-face {
+    font-family: FuenteUAMAZCRO;
+    src: url(../../Frutiger\ CE\ 55\ Roman.ttf);
+  }
+  
+  @font-face {
+    font-family: FuenteUAMAZCNegrita;
+    src: url(../../Frutiger\ CE\ 65\ Bold.ttf);
+  }
+  
+  /*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+  }
+  
+  .cabeceraprincipal{
+    width: 100%;
+    padding-top: 6%;
+    /*height: 250px;*/
+    /*object-fit: cover; /* Asegura que la imagen mantenga su aspecto */
+    /*border-radius: 5px; /* Opcional: redondea las esquinas de las imágenes */
+  }
+  
+
+  header {
+    position: fixed;
+    top:0; 
+    left:0;
+    right: 0;
+    background: #ffffff76;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.686);
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    z-index: 1000;
+    text-decoration: none;
+  }
+  
+  header .logomenu {
+    vertical-align: middle;
+    margin-right: 50px;
+    width: 9%;
+    height: 13%;
+    
+  }
+  
+  header .navbar ul{
+  list-style: none;
+  margin-left: 80px;
+  }
+  
+  header .navbar ul li{
+    position: relative;
+    float: left;
+    font-family: FuenteUAMAZCNegrita; ;
+  }
+  
+  header .navbar ul li a{
+    font-size: 17px;
+    padding: 20px;
+    color: #333;
+    display: block;
+  }
+  
+  header .navbar ul li a:hover{
+    background: #d22730;
+    color: #ffffff;
+    border-radius: 20px;
+  
+  }
+  
+  header .navbar ul li ul{
+    position: absolute;
+    left:0;
+    width:200px;
+    background: #fff;
+    display: none;
+  }
+  
+  header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+  
+  header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+    }
+  
+    header .navbar ul li:focus-within > ul,
+    header .navbar ul li:hover > ul {
+      display: initial;
+      }
+  
+    @media(max-width:991px){
+      header{
+        padding: 20px;
+      }
+    }
+  
+  
+    .cuerpo2{
+      text-align: left;
+      
+    }
+  
+
+.titulosinvestigaciontodos{
+    font-family: FuenteUAMAZCNegrita;
+}
+
+.seccioninvestigaciontodossubpagina{
+    margin: 3%;
+   text-align: justify;
+   text-justify: inter-word;
+   font-family: fuenteUAMAZCNormal;
+}
+
+.textoitalicainvest{
+    padding-left: 15px; 
+    padding-right: 15px;
+    font-style: italic;
+}
+
+.seccioninvestireferencia{
+    margin: 20px;
+   text-align: justify;
+   text-justify: inter-word;
+   font-family: fuenteUAMAZCNormal;
+   font-style: italic;
+}
+
+.listasinvestigacion{
+list-style-type: numeric;
+list-style-position: outside;
+}
+
+.listasinvestigacion li{
+    padding: 5px;
+}
+
+.tablainvestigacion{
+    padding: 15px;
+    text-align: center;
+    }
+    
+    th {
+        text-align: center;
+        border: 2px solid black;
+        background: rgba(213, 212, 212, 0.667);
+    }
+    td {
+        padding: 18px;
+        align-content: center;
+        border: 2px solid black;
+        background: rgba(213, 212, 212, 0.39);
+        
+    }
+
+
+ 
+    #btn-mas{
+        display: none;
+      }
+      
+      .containerflotante{
+        display: flex;
+        position: fixed;
+        bottom: 50%;
+        right: 5px;
+      }
+      
+      .redes{
+        font-family: FuenteUAMAZCNegrita;
+        font-size: 20px;
+      }
+      
+      
+      .icon-mas2{
+        display: block;
+        text-decoration: none;
+        background-color: #d22730;
+        color: #f3f3f3;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, .4);
+      }
+      
+      .redes a{
+        display: block;
+        text-decoration: none;
+        background-color: #d22730;
+        color: #f3f3f3;
+        line-height: 55px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, .4);
+        transition: all 500ms ease;
+        margin-right: 5px;
+      }
+      
+      .redes a:hover{
+        background-color:floralwhite;
+        color: #d22730;
+      }
+      
+      .redes a{
+        margin-bottom: -10px;
+        opacity: 0;
+        visibility: hidden;
+      }
+      
+      #btn-mas:checked~ .redes a{
+        margin-bottom: 10px;
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .icon-mas2{
+        cursor: pointer;
+        background: #d22730;
+        font-size: 20px;
+      }
+      
+      #btn-mas:checked ~ .btn-mas .icon-mas2{
+        /*transform: rotate(137deg);*/
+        font-size: 20px;
+      }
+    
+
+
+    .piepagina{
+        background: #d22730;
+        text-align: center;
+        color: #f3f3f3;
+        font-size: 18px;
+      }

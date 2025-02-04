@@ -1,0 +1,109 @@
+@font-face {
+  font-family: FuenteUAMAZCNormal;
+  src: url(Frutiger\ CE\ 45\ Light.ttf);
+}
+
+@font-face {
+  font-family: FuenteUAMAZCRO;
+  src: url(Frutiger\ CE\ 55\ Roman.ttf);
+}
+
+@font-face {
+  font-family: FuenteUAMAZCNegrita;
+  src: url(Frutiger\ CE\ 65\ Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabeceraprincipal{
+  width: 100%;
+}
+/* -------------------------------------------------------- */
+ .container{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 10px;
+ }
+
+ .header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid hsla(0, 0%, 100% , 0.2);
+  z-index: 10;
+ }
+
+ .header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .header .logo img{
+  vertical-align: middle;
+ }
+
+ .header .menu .head{
+  display: none;
+ }
+
+ .header .menu ul{
+  list-style: none;
+ }
+
+ .header .menu > ul > li{
+  display: inline-block;
+ }
+
+ .header .menu > ul > li:not(:last-child){
+  margin-right: 40px;
+ }
+
+ .header .menu .dropdown{
+  position: relative;
+ }
+ .header .menu a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: hsl(0,0% 100%);
+  line-height: 1.5;
+  display: block;
+ }
+
+ .header .menu > ul > li > a{
+  padding: 24px 0;
+ }
+
+.header .menu > ul > .dropdown > a{
+  padding-right: 15px;
+}
+
+.header .menu i{
+  font-size: 10px;
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  color: hsl(0,0% 100%);
+  top: calc(50% - 5px);
+}
+ 
+.header .menu > ul > li > i{
+  right: 0;
+}
+  
+  
+
+  .piepagina{
+    background: #d22730;
+    text-align: center;
+    color: #f3f3f3;
+    font-size: 18px;
+  }
+
+ 

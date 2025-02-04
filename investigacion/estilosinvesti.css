@@ -1,0 +1,223 @@
+@font-face {
+  font-family: FuenteUAMAZCNormal;
+  src: url(../Frutiger\ CE\ 45\ Light.ttf);
+}
+
+@font-face {
+  font-family: FuenteUAMAZCRO;
+  src: url(../Frutiger\ CE\ 55\ Roman.ttf);
+}
+
+@font-face {
+  font-family: FuenteUAMAZCNegrita;
+  src: url(../Frutiger\ CE\ 65\ Bold.ttf);
+}
+
+/*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.cabeceraprincipal{
+  width: 100%;
+}
+
+
+/* -------------------------------------------------------- */
+
+header {
+  position: fixed;
+  top:0; 
+  left:0;
+  right: 0;
+  background: #ffffff76;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.686);
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+header .logomenu {
+  vertical-align: middle;
+  width: 13%;
+  height: 17%;
+  
+}
+
+header .navbar ul{
+list-style: none;
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+  font-family: FuenteUAMAZCNegrita; ;
+}
+
+header .navbar ul li a{
+  font-size: 16px;
+  padding: 10px;
+  color: #333;
+  display: block;
+}
+
+header .navbar ul li a:hover{
+  background: #d22730;
+  color: #ffffff;
+
+}
+
+header .navbar ul li ul{
+  position: absolute;
+  left:0;
+  width:200px;
+  background: #fff;
+  display: none;
+}
+
+header .navbar ul li ul li{
+width: 100%;
+border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .navbar ul li ul li ul{
+  left: 200px;
+  top: 0;
+  }
+
+  header .navbar ul li:focus-within > ul,
+  header .navbar ul li:hover > ul {
+    display: initial;
+    }
+
+  @media(max-width:991px){
+    header{
+      padding: 20px;
+    }
+  }
+
+  .cuerpo2{
+    text-align: left;
+    
+  }
+
+  .letrasanimadas {
+    position: relative;
+    width: 10%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+   transform: translate(0%,10%);
+    border-bottom: .7vw solid #fff;
+    overflow: hidden;
+    animation: anim 2.5% liner forwards;
+    white-space: nowrap;
+  }
+
+  .letrasanimadas :first-of-type{
+    animation: showup 7s infinite;
+  }
+
+  .letrasanimadas:last-of-type {
+    width:0px;
+    animation: reveal 10s infinite;
+  }
+  
+  .letrasanimadas:last-of-type .tituloh2 {
+    margin-left:55px;
+    animation: slidein 10s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-right:-800px; }
+      20% { margin-right:-800px; }
+      35% { margin-right:0px; }
+      100% { margin-right:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:90%;}
+      80% {opacity:1;}
+      100% {opacity:0;width:55px;}
+  }
+  
+  
+
+  .tituloh2{
+    font-size: 50px;
+    color: #d22730;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+  }
+
+  .tituloh2 span{
+    transition: 2.5s;
+  }
+  
+/*
+  .tituloh2:hover span{
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale();
+  }
+*/ 
+
+.seccioninvestigaciontodossubpagina{
+  margin: 20px;
+ text-align: justify;
+ text-justify: inter-word;
+ font-family: fuenteUAMAZCNormal;
+}
+
+.listasinvestigacion{
+  list-style-type: numeric;
+  list-style-position: outside;
+  }
+  
+  .listasinvestigacion li{
+      padding: 5px;
+  }
+  
+  .tablainvestigacion{
+      padding: 15px;
+      text-align: center;
+      }
+      
+      th {
+          text-align: center;
+          border: 2px solid black;
+          background: rgba(213, 212, 212, 0.667);
+      }
+      td {
+          padding: 18px;
+          align-content: center;
+          border: 2px solid black;
+          background: rgba(213, 212, 212, 0.39);
+          
+      }
+
+      .piepagina{
+        background: #d22730;
+        text-align: center;
+        color: #f3f3f3;
+        font-size: 18px;
+      }
+
+      

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Micrositos de UEA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fondo general de la página */
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px; /* Ajusta el espaciado alrededor del encabezado */
+            background-color: #f0f0f0;
+        }
+
+        .header-container img {
+            width: 250px; /* Ajusta el tamaño de las imágenes de los logos */
+            height: auto; /* Mantiene la proporción original */
+            object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+        }
+
+        .title {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 28px; /* Aumenta el tamaño del título */
+            font-weight: bold;
+            color: black;
+        }
+
+        .contenido {
+            background-color: #f0f0f0; /* Color de fondo del cuadro */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+            padding: 20px;
+            max-width: 600px; /* Ancho máximo del cuadro */
+            margin: 20px auto; /* Centrado horizontal */
+        }
+
+        h1 {
+            color: #bd0003; /* Cambio de color a #bd0003 */
+            text-align: center; /* Centra el título */
+            margin-top: 20px; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: flex; /* Coloca el ícono y el texto en una línea horizontal */
+            align-items: center; /* Alinea verticalmente los elementos */
+            justify-content: flex-start; /* Alinea los íconos a la izquierda */
+            font-size: 18px;
+            margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+        }
+
+        li::before {
+            content: '\f013'; /* Icono de engranaje de Font Awesome */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: #bd0003; /* Cambio de color a #bd0003 */
+            margin-right: 10px; /* Espacio entre el ícono y el texto */
+            width: 20px; /* Ancho fijo para alinear los íconos */
+            text-align: center; /* Centra el ícono en su espacio asignado */
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con los logos y el título centrado -->
+    <header class="header-container">
+        <!-- Logo izquierdo -->
+        <img src="logo_azcapo.png" alt="Logo izquierdo">
+        
+        <!-- Título centrado -->
+        <div class="title">Área de mecánica y mecatrónica</div>
+        
+        <!-- Logo derecho -->
+        <img src="cabezal_V16.png" alt="Logo derecho">
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="contenido">
+        <h1>Micrositos de UEA</h1>
+        <ul>
+            <li><a href="material_de_apoyo.html">Material de apoyo</a></li>
+            <li><a href="libros.html">Libros</a></li>
+            <li><a href="articulos.html">Artículos relacionados con UEA</a></li>
+        </ul>
+    </div>
+</body>
+</html>

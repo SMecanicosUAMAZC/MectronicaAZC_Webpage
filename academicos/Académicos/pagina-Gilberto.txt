@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>M. en C. Gilberto Domingo Alvarez Miranda</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px; /* Aumenta el espaciado alrededor del encabezado */
+            background-color: #f0f0f0;
+        }
+
+        .header-container img {
+            width: 220px; /* Aumenta el tamaño de las imágenes de los logos */
+            height: auto; /* Mantiene la proporción original */
+            object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+        }
+
+        .title {
+            text-align: center;
+            flex-grow: 1;
+            font-size: 28px; /* Aumenta el tamaño del título */
+            font-weight: bold;
+            color: black;
+        }
+
+        .perfil {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .perfil h2 {
+            font-weight: bold;
+            font-size: 26px;
+            color: #bd0003;
+        }
+
+        .perfil p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .encabezado {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .encabezado img {
+            width: 120px; /* Ajusta el tamaño de la imagen de perfil */
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .encabezado span {
+            background-color: #bd0003;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con los logos y el título centrado -->
+    <header class="header-container">
+        <!-- Logo izquierdo -->
+        <img src="logo_azcapo.png" alt="Logo izquierdo">
+        
+        <!-- Título centrado -->
+        <div class="title">Área de mecánica y mecatrónica</div>
+        
+        <!-- Logo derecho -->
+        <img src="cabezal_V16.png" alt="Logo derecho">
+    </header>
+    
+    <!-- Contenido principal -->
+    <section class="perfil">
+        <!-- Mantiene la sección con la imagen y el nombre centrado -->
+        <div class="encabezado">
+            <img src="ejem.png" alt="Foto de M. en C. Gilberto Domingo Alvarez Miranda">
+            <span>M. en C. Gilberto Domingo Alvarez Miranda</span>
+        </div>
+
+        <h2>Formación</h2>
+        <p>Ingeniero en Comunicaciones y Electrónica por el Instituto Politécnico Nacional (1995), Ingeniero Mecánico por la Universidad Autónoma Metropolitana, Unidad Azcapotzalco (1997) y cursó los estudios de maestría en Ingeniería Eléctrica en la Universidad Nacional Autónoma de México (1998).</p>
+        
+        <h2>Semblanza corta</h2>
+        <p>Coordinador de la licenciatura en Ingeniería Mecánica desde 2015 a la fecha...</p>
+
+        <h2>Enlace a curriculum</h2>
+        <a href="#">…</a>
+
+        <h2>Información Contacto</h2>
+        <p> ... </p>
+    </section>
+</body>
+</html>

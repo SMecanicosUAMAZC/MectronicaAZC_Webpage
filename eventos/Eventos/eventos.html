@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fondo general de la página */
+        }
+
+        header.header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Reducir el padding para disminuir el espacio alrededor del contenido */
+            background-color: #f0f0f0;
+            max-width: 1200px; /* Máximo ancho del encabezado */
+            margin: 0 auto; /* Centrar el encabezado */
+        }
+
+        header.header-container img {
+            width: 250px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: red; /* Color del título */
+            margin: 10px 20px 20px; /* Reducir el margen superior para acercar el título al encabezado */
+            text-align: center;
+        }
+
+        .eventos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centra los eventos horizontalmente */
+            margin: 0 20px;
+        }
+
+        .evento {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .evento img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover; /* Asegura que la imagen mantenga su aspecto sin distorsionarse */
+            border-radius: 10px; /* Opcional: para bordes redondeados en las imágenes */
+        }
+
+        .evento a {
+            color: red; /* Color del enlace */
+            text-decoration: none; /* Quita el subrayado del enlace */
+            font-size: 18px; /* Tamaño de la fuente del enlace */
+        }
+
+        .evento a:hover {
+            text-decoration: underline; /* Subrayado al pasar el mouse sobre el enlace */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con los logos y el título centrado -->
+    <header class="header-container">
+        <!-- Logo izquierdo -->
+        <img src="logo_azcapo.png" alt="Logo izquierdo">
+        
+        <!-- Título centrado -->
+        <div class="title">Área de mecánica y mecatrónica</div>
+        
+        <!-- Logo derecho -->
+        <img src="cabezal_V16.png" alt="Logo derecho">
+    </header>
+
+    <h1>Eventos</h1>
+
+    <div class="eventos">
+        <div class="evento">
+            <img src="AreaMecanica1.jpeg" alt="Seminario Trimestral">
+            <h2><a href="subpagina1.html">Seminario Trimestral</a></h2> <!-- Enlace a otra subpágina -->
+        </div>
+        <div class="evento">
+            <img src="conferencia.jpg" alt="Conferencias">
+            <h2><a href="subpagina2.html">Conferencias</a></h2> <!-- Enlace a otra subpágina -->
+        </div>
+    </div>
+</body>
+</html>
