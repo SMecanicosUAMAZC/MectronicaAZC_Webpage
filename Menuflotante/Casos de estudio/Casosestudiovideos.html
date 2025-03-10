@@ -85,64 +85,66 @@
           <br/>
 
 
+
+
     <!-- Contenedor principal -->
     <div class="main-container">
-        <h1>Vídeos</h1>
+      <h1>Vídeos</h1>
 
-        <!-- Video 1 -->
-        <h2>Suspensión independiente de doble horquilla como solución a las vibraciones de un vehículo</h2>
-        <div class="video-container" id="video1">
-            <div class="thumbnail-container" onclick="mostrarVideo('1hSL2IGcuZkEY7fP2XP_tp-ei4R1fWWSW', 'video1')">
-                <div class="thumbnail-wrapper">
-                  <img src="playvideo2.png" alt="Miniatura Video 1">
-                    <!--<img src="https://via.placeholder.com/560x315.png?text=Previsualización+Video+1" alt="Miniatura Video 1"> -->
-                    <!-- <i class="fas fa-play-circle play-icon"></i> -->
-                </div>
-            </div>
-        </div>
-        <br/>
-        <p class="notasvideo">*Seleccionar la opcion "Ventana Externa" (boton super derecho en el video)</p>
+      <!-- Video 1 -->
+      <h2>Suspensión independiente de doble horquilla como solución a las vibraciones de un vehículo</h2>
+      <div class="video-container" id="video1">
+          <div class="thumbnail-container" onclick="mostrarVideo('1hSL2IGcuZkEY7fP2XP_tp-ei4R1fWWSW', 'video1')">
+              <div class="thumbnail-wrapper">
+                <img src="playvideo2.png" alt="Miniatura Video 1">
+                  <!--<img src="https://via.placeholder.com/560x315.png?text=Previsualización+Video+1" alt="Miniatura Video 1"> -->
+                  <!-- <i class="fas fa-play-circle play-icon"></i> -->
+              </div>
+          </div>
+      </div>
+      <br/>
+      <p class="notasvideo">*Seleccionar la opcion "Ventana Externa" (boton super derecho en el video)</p>
 
-        <!-- Video 2 -->
-        <h2>Vibración durante el transporte su efecto en perecederos</h2>
-        <div class="video-container" id="video2">
-          <video width="620" height="340" controls>
-            <source src="2022 Vibraciones durante el transporte y su efecto en perecederos.mp4" type="video/mp4">
-            
-            Your browser does not support the video tag.
-          </video>
-            </div>
-        </div>
+      <!-- Video 2 -->
+      <h2>Vibración durante el transporte su efecto en perecederos</h2>
+      <div class="video-container" id="video2">
+        <video width="620" height="340" controls>
+          <source src="2022 Vibraciones durante el transporte y su efecto en perecederos.mp4" type="video/mp4">
+          
+          Your browser does not support the video tag.
+        </video>
+          </div>
+      </div>
 
-    </div>
+  </div>
 
-  <div style="text-align: center;">
-    <!-- <iframe class="Videolink" width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">-->
-    </iframe>
-  </div>  
+<div style="text-align: center;">
+  <!-- <iframe class="Videolink" width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">-->
+  </iframe>
+</div>  
 
 
-    <script>
-        // Función para mostrar el video de Google Drive en un iframe
-        function mostrarVideo(videoID, containerID) {
-            var iframe = `<iframe src="https://drive.google.com/file/d/${videoID}/preview" allowfullscreen></iframe>`;
-            document.getElementById(containerID).innerHTML = iframe;
-        }
-    </script>
+  <script>
+      // Función para mostrar el video de Google Drive en un iframe
+      function mostrarVideo(videoID, containerID) {
+          var iframe = `<iframe src="https://drive.google.com/file/d/${videoID}/preview" allowfullscreen></iframe>`;
+          document.getElementById(containerID).innerHTML = iframe;
+      }
+  </script>
 
 <div class="containerflotante">
-    <input type="checkbox" id="btn-mas">
-    <div class="redes">
-      <a href="../../informaciongeneral/infogeneral.html">Informacion General</a>
-      <a href="../../investigacion/Investigacionmain.html">Investigacion</a>
-      <a href="#">Proyectos Destacados</a>
-      <a href="#">Casos de Estudio</a>
-    </div>
-    <div class="btn-mas">
-      <label for="btn-mas" class="icon-mas2">Menu</label>
-    </div>
+  <input type="checkbox" id="btn-mas">
+  <div class="redes">
+    <a href="../../informaciongeneral/infogeneral.html">Informacion General</a>
+    <a href="../../investigacion/Investigacionmain.html">Investigacion</a>
+    <a href="#">Proyectos Destacados</a>
+    <a href="#">Casos de Estudio</a>
   </div>
-  
+  <div class="btn-mas">
+    <label for="btn-mas" class="icon-mas2">Menu</label>
+  </div>
+</div>
+
   
   <footer class="piepagina">
     derechos reservados 2024-2025
