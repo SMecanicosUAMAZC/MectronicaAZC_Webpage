@@ -201,18 +201,18 @@ header .navbar ul li ul li ul{
 
 
     &:nth-of-type(1) {
-      background: url("imagenesindex/seminario.jpg") no-repeat 50% / cover;
+      background: url("../assets/imagenesindex/seminario.jpg") no-repeat 50% / cover;
     }
     &:nth-of-type(2) {
-      background: url("imagenesindex/platica.jpg")
+      background: url("../assets/imagenesindex/platica.jpg")
         no-repeat 50% / cover;
     }
     &:nth-of-type(3) {
-      background: url("imagenesindex/Entrevista.jpg")
+      background: url("../assets/imagenesindex/Entrevista.jpg")
         no-repeat 50% / cover;
     }
     &:nth-of-type(4) {
-      background: url("imagenesindex/taller.png") no-repeat 50% / cover;
+      background: url("../assets/imagenesindex/taller.png") no-repeat 50% / cover;
     }
 
     .pintura {
@@ -267,7 +267,7 @@ header .navbar ul li ul li ul{
 }
 
 .imgfondo{
-  background-image: url('principal.jpg');
+  background-image: url('../assets/principal.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

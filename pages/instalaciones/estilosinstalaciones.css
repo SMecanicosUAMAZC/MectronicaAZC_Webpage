@@ -178,7 +178,8 @@ header .navbar ul li ul li ul{
   
   
   .imgfondo{
-    background-image: url('../principal.jpg');
+    /* background-image: url('../principal.jpg'); */
+    background-image: url('../../assets/imagenesindex/principal.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
