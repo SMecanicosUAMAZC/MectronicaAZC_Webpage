@@ -1,16 +1,17 @@
 @font-face {
   font-family: FuenteUAMAZCNormal;
-  src: url(../Frutiger\ CE\ 45\ Light.ttf);
+  /* src: url(../Frutiger\ CE\ 45\ Light.ttf); */
+  src: url(../../css/Frutiger\ CE\ 45\ Light.ttf);
 }
 
 @font-face {
   font-family: FuenteUAMAZCRO;
-  src: url(../Frutiger\ CE\ 55\ Roman.ttf);
+  src: url(../../css/Frutiger\ CE\ 55\ Roman.ttf);
 }
 
 @font-face {
   font-family: FuenteUAMAZCNegrita;
-  src: url(../Frutiger\ CE\ 65\ Bold.ttf);
+  src: url(../../css/Frutiger\ CE\ 65\ Bold.ttf);
 }
 
 /*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
@@ -185,14 +186,15 @@ header .navbar ul li ul li ul{
   
   
       &:nth-of-type(1) {
-        background: url("../imagenesindex/seminario.jpg") no-repeat 50% / cover;
+        /* background: url("../imagenesindex/seminario.jpg") no-repeat 50% / cover; */
+        background: url("../../assets/imagenesindex/seminario.jpg") no-repeat 50% / cover;
       }
       &:nth-of-type(2) {
-        background: url("../imagenesindex/platica.jpg")
+        background: url("../../assets/imagenesindex/platica.jpg")
           no-repeat 50% / cover;
       }
       &:nth-of-type(3) {
-        background: url("../imagenesindex/Entrevista.jpg")
+        background: url("../../assets/imagenesindex/Entrevista.jpg")
           no-repeat 50% / cover;
       }
      
@@ -249,7 +251,7 @@ header .navbar ul li ul li ul{
   }
 
   .imgfondo{
-    background-image: url('../principal.jpg');
+    background-image: url('../../assets/principal.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -437,4 +439,6 @@ header .navbar ul li ul li ul{
     text-align: center;
     color: #f3f3f3;
     font-size: 18px;
+    
+    min-height: 10vh;
   }

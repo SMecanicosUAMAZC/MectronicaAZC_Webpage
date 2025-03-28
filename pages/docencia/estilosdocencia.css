@@ -1,16 +1,17 @@
 @font-face {
   font-family: FuenteUAMAZCNormal;
-  src: url(../Frutiger\ CE\ 45\ Light.ttf);
+  /* src: url(../Frutiger\ CE\ 45\ Light.ttf); */
+  src: url(../../css/Frutiger\ CE\ 45\ Light.ttf);
 }
 
 @font-face {
   font-family: FuenteUAMAZCRO;
-  src: url(../Frutiger\ CE\ 55\ Roman.ttf);
+  src: url(../../css/Frutiger\ CE\ 55\ Roman.ttf);
 }
 
 @font-face {
   font-family: FuenteUAMAZCNegrita;
-  src: url(../Frutiger\ CE\ 65\ Bold.ttf);
+  src: url(../../css/Frutiger\ CE\ 65\ Bold.ttf);
 }
 
 /*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
@@ -283,6 +284,8 @@ h2 {
   text-align: center;
   color: #f3f3f3;
   font-size: 18px;
+
+  min-height: 10vh;
 }
 
 .imgfondo{

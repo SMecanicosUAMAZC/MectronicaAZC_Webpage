@@ -1,17 +1,17 @@
 @font-face {
     font-family: FuenteUAMAZCNormal;
-    /* src: url(../../Frutiger\ CE\ 45\ Light.ttf); */
-    src: url(../../../css/Frutiger\ CE\ 45\ Light.ttf);
+    /* src: url(../Frutiger\ CE\ 45\ Light.ttf); */
+    src: url(../../css/Frutiger\ CE\ 45\ Light.ttf);
   }
   
   @font-face {
     font-family: FuenteUAMAZCRO;
-    src: url(../../../css/Frutiger\ CE\ 55\ Roman.ttf);
+    src: url(../../css/Frutiger\ CE\ 55\ Roman.ttf);
   }
   
   @font-face {
     font-family: FuenteUAMAZCNegrita;
-    src: url(../../../css/Frutiger\ CE\ 65\ Bold.ttf);
+    src: url(../../css/Frutiger\ CE\ 65\ Bold.ttf);
   }
   
   /*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
@@ -29,7 +29,11 @@
   }
   /* -------------------------------------------------------- */
   
-
+  .textoitalicainfogen{
+    padding-left: 15px; 
+    padding-right: 15px;
+    font-style: italic;
+  }
   header {
     position: fixed;
     top:0; 
@@ -61,7 +65,7 @@
   header .navbar ul li{
     position: relative;
     float: left;
-    font-family: FuenteUAMAZCNegrita;
+    font-family: FuenteUAMAZCNegrita; ;
   }
   
   header .navbar ul li a{
@@ -162,11 +166,92 @@
         100% {opacity:0;width:55px;}
     }
   
-   
+    .mural {
+      width: 100%;
+      display: flex; /*bloque para conterner otro cosa*/
+      justify-content: center; /*bloque superior para contener display*/
+      height: 500px; /*altura de los cuadros*/
+      gap: 20px; /*espacio entre las imagenes*/
+      /*background: red;*/
+    
+      >div {
+        flex: 0 0 250px;/* elemento flexible no se pueda crecer (0), no se pueda reducir (0) y tenga una longitud inicial de 120 píxeles:*/
+        border-radius: 0.5rem;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        box-shadow: 1px 5px 15px #4a1025;
+        position: relative;
+        overflow: hidden;
+        background: pink;
+    
+    
+        &:nth-of-type(1) {
+          /* background: url("../imagenesindex/seminario.jpg") no-repeat 50% / cover; */
+          background: url("../../assets/imagenesindex/seminario.jpg") no-repeat 50% / cover;
+        }
+        &:nth-of-type(2) {
+          background: url("../../assets/imagenesindex/platica.jpg")
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(3) {
+          background: url("../../assets/imagenesindex/Entrevista.jpg")
+            no-repeat 50% / cover;
+        }
+       
+    
+        .pintura {
+          font-size: 1.5rem;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          padding: 15px;
+          opacity: 0;
+          flex-direction: column;
+          height: 100%;
+          justify-content: flex-end;
+          background: rgb(46, 2, 6);
+          background: linear-gradient(
+            0deg,
+            rgba(46, 2, 22, 0.676) 0%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          transform: translatey(100%);
+          transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+          visibility: hidden;
+    
+          span {
+            display: block;
+            margin-top: 5px;
+            font-size: 1.2rem;
+          }
+    
+          a {
+            display: block;
+            margin-top: 3px;
+            font-size: 1.2rem;
+            color: #f3f3f3;
+          }
+          a:hover {
+            color: #d22730;
+          }
+        }
+    
+        &:hover {
+          flex: 0 0 250px;
+          box-shadow: 1px 3px 15px #d84560;
+          transform: translatey(-30px);
+        }
+    
+        &:hover .pintura {
+          opacity: 1;
+          transform: translatey(0%);
+          visibility: visible;
+        }
+      }
+    }
   
     .imgfondo{
-      /* background-image: url('../../principal.jpg'); */
-      background-image: url('../../../assets/principal.jpg');
+      background-image: url('../../assets/principal.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
@@ -174,7 +259,7 @@
       padding-bottom: 3%;
     }
     
- 
+  
     
     .slide{
       
@@ -215,11 +300,6 @@
       
     }
     
-    .notasvideo{
-      font-family: FuenteUAMAZCNegrita;
-      font-size: 25px;
-      color: #000000;
-    }
     
   .seccioninfogeneraltodossubpagina{
       margin: 50px;
@@ -352,67 +432,6 @@
       /*transform: rotate(137deg);*/
       font-size: 20px;
     }
-
-    .main-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-  }
-
-  h1 {
-      color: #333;
-      margin-bottom: 20px;
-  }
-
-  h2 {
-      color:#f3f3f3;
-      font-size: 25px;
-      font-family: FuenteUAMAZCNegrita;
-      margin-top: 20px;
-      margin-bottom: 10px;
-  }
-
-  .video-container {
-      margin-top: 20px;
-      width: 100%;
-      max-width: 560px;
-      text-align: center;
-  }
-
-  iframe {
-    width: 100%;
-    height: 315px;
-    border: none;
-}
-
-
-  /* Estilo para la miniatura */
-  .thumbnail-container {
-      cursor: pointer;
-  }
-
-  .thumbnail-container img {
-      width: 100%;
-      max-width: 560px;
-      border: 3px solid #bd0003;
-      border-radius: 8px;
-  }
-
-  .play-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 64px;
-      color: white;
-  }
-
-  .thumbnail-wrapper {
-      position: relative;
-      display: inline-block;
-  }
   
   
     .piepagina{
@@ -421,8 +440,5 @@
       color: #f3f3f3;
       font-size: 18px;
       
-      margin: 0;
-      padding: 0;
-
       min-height: 10vh;
     }
