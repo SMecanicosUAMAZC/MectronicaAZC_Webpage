@@ -1,23 +1,23 @@
 @font-face {
   font-family: FuenteUAMAZCNormal;
-  src: url(../Frutiger\ CE\ 45\ Light.ttf);
+  src: url(Frutiger\ CE\ 45\ Light.ttf);
 }
 
 @font-face {
   font-family: FuenteUAMAZCRO;
-  src: url(../Frutiger\ CE\ 55\ Roman.ttf);
+  src: url(Frutiger\ CE\ 55\ Roman.ttf);
 }
 
 @font-face {
   font-family: FuenteUAMAZCNegrita;
-  src: url(../Frutiger\ CE\ 65\ Bold.ttf);
+  src: url(Frutiger\ CE\ 65\ Bold.ttf);
 }
 
 /*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0;                    
+  padding: 0;                 
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -27,7 +27,6 @@
   padding-top: 6%;
 }
 /* -------------------------------------------------------- */
-
 
 header {
   position: fixed;
@@ -60,7 +59,7 @@ margin-left: 80px;
 header .navbar ul li{
   position: relative;
   float: left;
-  font-family: FuenteUAMAZCNegrita; ;
+  font-family: FuenteUAMAZCNegrita; 
 }
 
 header .navbar ul li a{
@@ -108,10 +107,9 @@ header .navbar ul li ul li ul{
 
   .cuerpo2{
     text-align: left;
-    
+    /* height:30vh; */
   }
 
-  
   .letrasanimadas {
     position: relative;
     width: 10%;
@@ -160,11 +158,13 @@ header .navbar ul li ul li ul{
       80% {opacity:1;}
       100% {opacity:0;width:55px;}
   }
+  
+  
 
   .tituloh2{
-    font-size: 50px;
-    color: #f5f5f5;
-    text-transform: uppercase;
+    font-size: 55px;              
+    color: #f5f5f5;             
+    text-transform: uppercase;   
     text-align: center;
     display: flex;
   }
@@ -181,7 +181,6 @@ header .navbar ul li ul li ul{
   }
 */ 
 
-/* Estilos del mural */
 .mural {
   width: 100%;
   display: flex; /*bloque para conterner otro cosa*/
@@ -191,7 +190,7 @@ header .navbar ul li ul li ul{
   /*background: red;*/
 
   >div {
-    flex: 0 0 200px;/* elemento flexible no se pueda crecer (0), no se pueda reducir (0) y tenga una longitud inicial de 120 píxeles:*/
+    flex: 0 0 250px;/* elemento flexible no se pueda crecer (0), no se pueda reducir (0) y tenga una longitud inicial de 120 píxeles:*/
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -202,22 +201,18 @@ header .navbar ul li ul li ul{
 
 
     &:nth-of-type(1) {
-      background: url("../docencia/Docencia/DSC.jpg") no-repeat 50% / cover;
+      background: url("../assets/imagenesindex/seminario.jpg") no-repeat 50% / cover;
     }
     &:nth-of-type(2) {
-      background: url("../docencia/Docencia/DSC.jpg") no-repeat 50% / cover;
+      background: url("../assets/imagenesindex/platica.jpg")
+        no-repeat 50% / cover;
     }
     &:nth-of-type(3) {
-      background: url("../docencia/Docencia/DSC.jpg") no-repeat 50% / cover;
+      background: url("../assets/imagenesindex/Entrevista.jpg")
+        no-repeat 50% / cover;
     }
     &:nth-of-type(4) {
-      background: url("../docencia/Docencia/DSC.jpg") no-repeat 50% / cover;
-    }
-    &:nth-of-type(5) {
-      background: url("../docencia/Docencia/DSC.jpg") no-repeat 50% / cover;
-    }
-    &:nth-of-type(6) {
-      background: url("../docencia/Docencia/DSC.jpg") no-repeat 50% / cover;
+      background: url("../assets/imagenesindex/taller.png") no-repeat 50% / cover;
     }
 
     .pintura {
@@ -271,19 +266,14 @@ header .navbar ul li ul li ul{
   }
 }
 
-
-
 .imgfondo{
-  background-image: url('../principal.jpg');
+  background-image: url('../assets/principal.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding-top: 5%;
   padding-bottom: 3%;
 }
-
-
-
 
 .piepagina{
   background: #d22730;
@@ -292,7 +282,81 @@ header .navbar ul li ul li ul{
   font-size: 18px;
 }
 
+.slide{
+  
+  padding-left: 15px;
+  height: 100%;
+  width: 15%;
+  position:absolute;
+  background-color: #d4d4d4;
+  transition: 0.5s ease;
+}
 
+.menuflo{
+  color: #d84560;
+  font-weight: 800;
+  text-align: right;
+  padding: 10px 0;
+  padding-right: 30px;
+  pointer-events: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li a{
+  color: #d22730;
+  font-weight: 500;
+  padding: 5px 0;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+input{
+  display: none;
+  visibility: hidden;
+  
+}
+
+/*https://www.youtube.com/watch?v=1TZjgQ0Osic
+https://www.youtube.com/watch?v=-qTiHIi5VuM
+https://www.youtube.com/watch?v=-qTiHIi5VuM&t=659s
+*/
+/*
+.toggle{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top:20px;
+  left:15px;
+  z-index: pointer;
+  border-radius: 2px;
+  background-color: #4a1025;
+  box-shadow: 0 0 10px rgb(0,0,0,0.3);
+
+}
+
+
+<label>
+    <input type="checkbox">
+    <div class="toggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide">
+      <h1 class="menuflo">Menu</h1>
+      <ul>
+        <li><a href="#">Informacion General</a></li>
+        <li><a href="#">Investigacion</a></li>
+        <li><a href="#">Proyectos de integracion</a></li>
+      </ul>
+    </div>
+  </label>
+*/
 
 #btn-mas{
   display: none;
