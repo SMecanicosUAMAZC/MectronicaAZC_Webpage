@@ -1,0 +1,69 @@
+.contenedor {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+
+}
+body{
+    padding: 15rem;
+}
+
+.contenedor>div {
+    border: 1px solid black;
+}
+
+.pieza1 {
+    grid-area: 1/1/6/6;
+    background-color: aquamarine;
+    /* background-image: url("./imagenes-mural/01.jpg"); */
+}
+
+.pieza2 {
+    grid-area: 1/6/3/13;
+    background-color: blue;
+    color:white;
+    /* background-image: url("./imagenes-mural/02.jpg"); */
+}
+
+.pieza3 {
+    grid-area: 3/6/6/10;
+    background-color: black;
+    color: white;
+    /* background-image: url("./imagenes-mural/03.jpg"); */
+}
+
+.pieza4 {
+    grid-area: 3/10/6/13;
+    background-color: pink;
+    /* background-image: url("./imagenes-mural/04.jpg"); */
+}
+
+.pieza5 {
+    grid-area: 6/10/10/11;
+    background-color: green;
+    /* background-image: url("./imagenes-mural/05.jpg"); */
+}
+.pieza6{
+    grid-area: 6/11/10/13;
+    background-color: crimson;
+    color: white;
+    /* background-image: url("./imagenes-mural/06.png"); */
+}
+
+.pieza7 {
+    grid-area: 10/10/13/13;
+    background-color: chocolate;
+    /* background-image: url("./imagenes-mural/07.jpg"); */
+}
+
+.pieza8 {
+    grid-area: 6/4/13/10;
+    background-color: yellow;
+    /* background-image: url("./imagenes-mural/08.jpg"); */
+}
+
+.pieza9 {
+    grid-area: 6/1/13/4;
+    background-color: brown;
+    /* background-image: url("./imagenes-mural/09.jpg"); */
+}
