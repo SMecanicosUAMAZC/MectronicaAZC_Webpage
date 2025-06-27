@@ -13,8 +13,6 @@
   src: url(../Frutiger\ CE\ 65\ Bold.ttf);
 }
 
-/*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
-
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +24,6 @@
 .cabeceraprincipal{
   width: 100%;
   padding-top: 6%;
-  /*height: 250px;*/
-  /*object-fit: cover; /* Asegura que la imagen mantenga su aspecto */
-  /*border-radius: 5px; /* Opcional: redondea las esquinas de las imágenes */
 }
 
 /* -------------------------------------------------------- */
@@ -196,7 +191,6 @@ header .navbar ul li ul li ul{
     justify-content: center; /*bloque superior para contener display*/
     height: 500px; /*altura de los cuadros*/
     gap: 20px; /*espacio entre las imagenes*/
-    /*background: red;*/
   
     >div {
       flex: 0 0 250px;/* elemento flexible no se pueda crecer (0), no se pueda reducir (0) y tenga una longitud inicial de 120 píxeles:*/

@@ -1,19 +1,17 @@
 @font-face {
     font-family: FuenteUAMAZCNormal;
-    /* src: url(../../Frutiger\ CE\ 45\ Light.ttf); */
-    src: url(../../../css/Frutiger\ CE\ 45\ Light.ttf);
+    src: url(../../css/Frutiger\ CE\ 45\ Light.ttf);
   }
   
   @font-face {
     font-family: FuenteUAMAZCRO;
-    src: url(../../../css/Frutiger\ CE\ 55\ Roman.ttf);
+    src: url(../../css/Frutiger\ CE\ 55\ Roman.ttf);
   }
   
   @font-face {
     font-family: FuenteUAMAZCNegrita;
-    src: url(../../../css/Frutiger\ CE\ 65\ Bold.ttf);
+    src: url(../../css/Frutiger\ CE\ 65\ Bold.ttf);
   }
-  
   
   
   * {
@@ -29,10 +27,14 @@
   }
   /* -------------------------------------------------------- */
   
-
+  .textoitalicainfogen{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-style: italic;
+  }
   header {
     position: fixed;
-    top:0; 
+    top:0;
     left:0;
     right: 0;
     background: #ffffff76;
@@ -50,7 +52,7 @@
     margin-right: 50px;
     width: 9%;
     height: 13%;
-    
+  
   }
   
   header .navbar ul{
@@ -61,7 +63,7 @@
   header .navbar ul li{
     position: relative;
     float: left;
-    font-family: FuenteUAMAZCNegrita;
+    font-family: FuenteUAMAZCNegrita; ;
   }
   
   header .navbar ul li a{
@@ -110,7 +112,7 @@
   
     .cuerpo2{
       text-align: left;
-      
+  
     }
   
     .letrasanimadas {
@@ -134,11 +136,11 @@
       width:0px;
       animation: reveal 10s infinite;
     }
-    
+  
     .letrasanimadas:last-of-type .tituloh2 {
       margin-left:55px;
       animation: slidein 10s infinite;
-    } 
+    }
   
     @keyframes showup {
         0% {opacity:0;}
@@ -146,14 +148,14 @@
         80% {opacity:1;}
         100% {opacity:0;}
     }
-    
+  
     @keyframes slidein {
         0% { margin-right:-800px; }
         20% { margin-right:-800px; }
         35% { margin-right:0px; }
         100% { margin-right:0px; }
     }
-    
+  
     @keyframes reveal {
         0% {opacity:0;width:0px;}
         20% {opacity:1;width:0px;}
@@ -162,22 +164,21 @@
         100% {opacity:0;width:55px;}
     }
   
-   
   
-    .imgfondo{
-      
-      background-image: url('../../../assets/principal.jpg');
+    
+    main{
+      background-image: url('../../assets/imagenesindex/principal.jpg');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
       padding-top: 5%;
       padding-bottom: 3%;
     }
-    
- 
-    
+  
+  
+  
     .slide{
-      
+  
       padding-left: 15px;
       height: 100%;
       width: 15%;
@@ -185,7 +186,7 @@
       background-color: #d4d4d4;
       transition: 0.5s ease;
     }
-    
+  
     .menuflo{
       color: #d84560;
       font-weight: 800;
@@ -194,11 +195,11 @@
       padding-right: 30px;
       pointer-events: none;
     }
-    
+  
     ul li{
       list-style: none;
     }
-    
+  
     ul li a{
       color: #d22730;
       font-weight: 500;
@@ -208,19 +209,14 @@
       text-decoration: none;
       transition: 0.2s ease-out;
     }
-    
+  
     input{
       display: none;
       visibility: hidden;
-      
+  
     }
-    
-    .notasvideo{
-      font-family: FuenteUAMAZCNegrita;
-      font-size: 25px;
-      color: #000000;
-    }
-    
+  
+  
   .seccioninfogeneraltodossubpagina{
       margin: 50px;
      text-align: justify;
@@ -231,9 +227,10 @@
   .listasinfogeneral{
     list-style-type: numeric;
     list-style-position: outside;
+    list-style-type: disc; 
     }
-    
-    
+  
+  
     .listasinfogeneral li{
         padding: 5px;
     }
@@ -245,11 +242,11 @@
       text-align: center;
       display: flex;
     }
-    
+  
     .tituloh2 span{
       transition: 2.5s;
     }
-    
+
   .seccioninfogeneralreferencia{
     margin: 20px;
    text-align: justify;
@@ -260,9 +257,9 @@
   
   .tablainfogenproinve{
     padding: 15px;
-    
+  
     }
-    
+  
     th {
         text-align: center;
         border: 2px solid black;
@@ -273,25 +270,25 @@
         align-content: center;
         border: 2px solid black;
         background: rgba(213, 212, 212, 0.39);
-        
+  
     }
     #btn-mas{
       display: none;
     }
-    
+  
     .containerflotante{
       display: flex;
       position: fixed;
       bottom: 50%;
       right: 5px;
     }
-    
+  
     .redes{
       font-family: FuenteUAMAZCNegrita;
       font-size: 20px;
     }
-    
-    
+  
+  
     .icon-mas2{
       display: block;
       text-decoration: none;
@@ -304,7 +301,7 @@
       border-radius: 5px;
       box-shadow: 0px 1px 10px rgba(0, 0, 0, .4);
     }
-    
+  
     .redes a{
       display: block;
       text-decoration: none;
@@ -317,114 +314,33 @@
       transition: all 500ms ease;
       margin-right: 5px;
     }
-    
+  
     .redes a:hover{
       background-color:floralwhite;
       color: #d22730;
     }
-    
+  
     .redes a{
       margin-bottom: -10px;
       opacity: 0;
       visibility: hidden;
     }
-    
+  
     #btn-mas:checked~ .redes a{
       margin-bottom: 10px;
       opacity: 1;
       visibility: visible;
     }
-    
+  
     .icon-mas2{
       cursor: pointer;
       background: #d22730;
       font-size: 20px;
     }
-    
+  
     #btn-mas:checked ~ .btn-mas .icon-mas2{
-      
       font-size: 20px;
     }
-
-    .main-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      
-  }
-  
-  .main-container section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-  }
-
-  h1 {
-      color: #333;
-      margin-bottom: 20px;
-  }
-
-  h2 {
-      color:#f3f3f3;
-      font-size: 25px;
-      font-family: FuenteUAMAZCNegrita;
-      margin-top: 20px;
-      margin-bottom: 10px;
-  }
-
-  .video-container {
-      margin-top: 20px;
-      width: 100%;
-      /* Para que ambos videos, tanto el frame de youtube como el video html tenga la mis anchura y se centren bien */
-      max-width: 800px; 
-      /* max-width: 560px; */
-      text-align: center;
-      
-  }
-  .video-container iframe{
-    width: 800px;
-    height: 450px;
-    display: block;
-
-  }
-
-  iframe {
-    width: 100%;
-    height: 315px;
-    border: none;
-}
-
-
-  /* Estilo para la miniatura */
-  .thumbnail-container {
-      cursor: pointer;
-  }
-
-  .thumbnail-container img {
-      width: 100%;
-      max-width: 560px;
-      border: 3px solid #bd0003;
-      border-radius: 8px;
-  }
-
-  .play-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 64px;
-      color: white;
-  }
-
-  .thumbnail-wrapper {
-      position: relative;
-      display: inline-block;
-  }
   
   
     .piepagina{
@@ -432,9 +348,186 @@
       text-align: center;
       color: #f3f3f3;
       font-size: 18px;
-      
-      margin: 0;
-      padding: 0;
-
+  
       min-height: 10vh;
     }
+    .layout-principal{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100vh; 
+      padding: 20px;
+    }
+    .contenido-general {
+      width: 98%;
+      padding: 10px;
+      /* background-color: #d22730; */
+      background-color: transparent;
+      padding: 0;
+    }
+  
+  .mural-bidimensional {
+    background-color: #d84560;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    padding: 10px;
+    min-height: 600px; 
+    
+  }
+  
+  .mural-bidimensional img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  .mural-bidimensional img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  .mural {
+    width: 100%;
+    padding: 20px;
+
+  }
+  
+  .contenedor {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+  
+  .contenedor > div {
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #4a1025;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .contenedor > div:hover {
+    box-shadow: 1px 3px 15px #d84560;
+    transform: translateY(-10px);
+  }
+  
+  /* Estilos individuales */
+  .pieza1 {
+    grid-area: 1/1/4/4;
+    background-image: url("./imagenes infogen/mural-obj-gen/01.obj-estudio.jpg");
+  }
+  .pieza2 {
+    grid-area: 1/4/3/7;
+    background-image: url("./imagenes infogen/mural-obj-gen/02.obj-generales.jpg");
+  }
+  .pieza3 {
+    grid-area: 4/1/7/4;
+    background-image: url("./imagenes infogen/mural-obj-gen/03.obj-especificos.jpg");
+  }
+  .pieza4 {
+    grid-area: 3/4/5/7;
+    background-image: url("./imagenes infogen/mural-obj-gen/04.Programa-investigacion.jpg");
+  }
+  .pieza5 {
+    grid-area: 5/4/7/7;
+    background-image: url("./imagenes infogen/mural-obj-gen/05.referencias.jpg");
+  }
+  
+
+  .contenedor > div .pintura {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    background: linear-gradient(0deg, rgba(46, 2, 22, 0.676) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+    visibility: hidden;
+  }
+  
+  .contenedor > div:hover .pintura {
+    opacity: 1;
+    transform: translateY(0%);
+    visibility: visible;
+  }
+  
+  .pintura span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.8rem;
+  }
+  
+  .pintura a {
+    display: block;
+    margin-top: 3px;
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    text-decoration: none;
+  }
+  
+  .pintura a:hover {
+    color: #d22730;
+  }
+  
+  
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .overlay-content {
+    background-color: #fff;
+    /* box-shadow: 1px 5px 15px #f5015b; */
+    box-shadow: 1px 5px 15px #f50115;
+    padding: 30px;
+    width: auto; /* Se ajusta al contenido */
+    max-width: 90vw; /* No más ancho que el viewport */
+    max-height: 80vh;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Evita que el padding expanda el tamaño */
+  }
+  
+  #cerrarOverlay {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: #e01620;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #contenidoOverlay {
+    overflow-y: auto;
+    flex: 1;
+    margin-top: 40px;
+    padding-right: 10px;
+  }
+  

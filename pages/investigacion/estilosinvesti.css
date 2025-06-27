@@ -13,7 +13,6 @@
   src: url(../Frutiger\ CE\ 65\ Bold.ttf);
 }
 
-/*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
 
 * {
   margin: 0;
@@ -170,14 +169,6 @@ header .navbar ul li ul li ul{
   .tituloh2 span{
     transition: 2.5s;
   }
-  
-/*
-  .tituloh2:hover span{
-    filter: blur(20px);
-    opacity: 0;
-    transform: scale();
-  }
-*/ 
 
 .seccioninvestigaciontodossubpagina{
   margin: 20px;

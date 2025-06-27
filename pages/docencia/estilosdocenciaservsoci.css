@@ -128,20 +128,6 @@ header .navbar ul li ul li ul{
   .tituloh2 span{
     transition: 2.5s;
   }
-  
-/*
-  .tituloh2:hover span{
-    filter: blur(20px);
-    opacity: 0;
-    transform: scale();
-  }
-*/ 
-
-
-
-
-
-
 
 
 .piepagina{
@@ -154,7 +140,6 @@ header .navbar ul li ul li ul{
 }
 
 .imgfondo{
-  /* background-image: url('../principal.jpg'); */
   background-image: url('../../assets/imagenesindex/principal.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -235,7 +220,6 @@ header .navbar ul li ul li ul{
 }
 
 #btn-mas:checked ~ .btn-mas .icon-mas2{
-  /*transform: rotate(137deg);*/
   font-size: 20px;
 }
 

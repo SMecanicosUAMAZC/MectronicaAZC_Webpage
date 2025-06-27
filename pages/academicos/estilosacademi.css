@@ -1,6 +1,5 @@
 @font-face {
   font-family: FuenteUAMAZCNormal;
-  /* src: url(../Frutiger\ CE\ 45\ Light.ttf); */
   src: url(../../css/Frutiger\ CE\ 45\ Light.ttf);
 
 }
@@ -15,7 +14,6 @@
   src: url(../../css/Frutiger\ CE\ 65\ Bold.ttf);
 }
 
-/*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
 
 * {
   margin: 0;
@@ -175,13 +173,6 @@ header .navbar ul li ul li ul{
     transition: 2.5s;
   }
   
-/*
-  .tituloh2:hover span{
-    filter: blur(20px);
-    opacity: 0;
-    transform: scale();
-  }
-*/ 
 
 /* Estilos del mural */
 .mural {
@@ -190,7 +181,6 @@ header .navbar ul li ul li ul{
   justify-content: center; /*bloque superior para contener display*/
   height: 500px; /*altura de los cuadros*/
   gap: 20px; /*espacio entre las imagenes*/
-  /*background: red;*/
 
   >div {
     flex: 0 0 200px;/* elemento flexible no se pueda crecer (0), no se pueda reducir (0) y tenga una longitud inicial de 120 píxeles:*/
@@ -276,7 +266,6 @@ header .navbar ul li ul li ul{
 
 
 .imgfondo{
-  /* background-image: url('../principal.jpg'); */
   background-image: url('../../assets/imagenesindex/principal.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -366,6 +355,5 @@ header .navbar ul li ul li ul{
 }
 
 #btn-mas:checked ~ .btn-mas .icon-mas2{
-  /*transform: rotate(137deg);*/
   font-size: 20px;
 }

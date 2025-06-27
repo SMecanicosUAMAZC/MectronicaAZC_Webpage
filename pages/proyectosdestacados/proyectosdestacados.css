@@ -207,7 +207,7 @@ header .navbar ul li:hover>ul {
     width: 55px;
   }
 }
-
+/* Inicio de estilos mural */
 .mural-bidimensional {
   background-color: #d84560;
   display: grid;
@@ -340,7 +340,7 @@ header .navbar ul li:hover>ul {
   color: #d22730;
 }
 
-
+/* Fin de estilos mural */
 .imgfondo {
   background-image: url('../../assets/principal.jpg');
   background-repeat: no-repeat;

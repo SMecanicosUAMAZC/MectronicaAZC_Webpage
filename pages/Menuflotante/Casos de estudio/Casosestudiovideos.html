@@ -19,7 +19,7 @@
   <header>
 
 
-    <!-- <img class="logomenu" src="../../imagenesindex/Logo MM-16.png" alt="logo"> -->
+    
     <img class="logomenu" src="../../../assets/imagenesindex/Logo MM-16.png" alt="logo">
     <img class="logomenu" src="../../../assets/imagenesindex/Logo MM-17.png" alt="cbi">
     <img class="logomenu" src="../../../assets/imagenesindex/Logo MM-18.png" alt="cbi">
@@ -28,43 +28,11 @@
     <nav class="navbar">
       <ul>
         <li><a href="../../../index.html">Inicio</a></li>
-
-        <!--<li><a href="informaciongeneral/infogeneral.html">Información General+</a>-->
-        <!-- <ul> -->
-        <!-- <li><a href="informaciongeneral/infogeneral.html#section1">Objetivo de estudio</a></li>-->
-        <!--<li><a href="informaciongeneral/infogeneral.html#section2">Objetivos generales y específicos</a></li>-->
-        <!--<li><a href="informaciongeneral/infogeneral.html#section3">Programa de investigacion</a></li>-->
-        <!--</ul>-->
-        <!--</li>-->
-        <!--<li><a href="investigacion/investigacion.html">Investigacion+</a>-->
-        <!--<ul>-->
-        <!--<li><a href="investigacion/investigacion.html#section4">Proyectos actuales</a></li>-->
-        <!--<li><a href="investigacion/investigacion.html#section5">Proyectos de investigacion</a></li>-->
-        <!--</ul>-->
-        <!--</li>-->
-
         <li><a href="../../academicos/academicos.html">Academicos</a></li>
 
         <li><a href="../../docencia/Docencia.html">Docencia</a></li>
-        <!--<ul>-->
-        <!--<li><a href="docencia/Docencia.html#section6">Micrositio de UEA</a></li>-->
-        <!--<li><a href="docencia/Docencia.html#section7">Servicio social</a></li>-->
-        <!--<li><a href="docencia/Docencia.html#section8">Proyectos de integración</a></li>-->
-        <!--<li><a href="docencia/Docencia.html#section9">Ayudantes</a></li>-->
-        <!--</ul>-->
-        <!--</li>-->
-
         <li><a href="../../instalaciones/Instalaciones.html">Instalaciones</a></li>
-
         <li><a href="../../eventos/eventosm2.html">Eventos</a></li>
-
-        <!--<li><a href="#new2">Proyectos de integración+</a>-->
-        <!--<ul>-->
-        <!--<li><a href="#">Artículos</a></li>-->
-        <!--<li><a href="#">Libros</a></li>-->
-        <!-- <li><a href="#">Material</a></li>-->
-        <!--</ul>-->
-        <!--</li>-->
 
       </ul>
     </nav>
@@ -93,37 +61,32 @@
     <div class="main-container">
       <h1>Vídeos</h1>
 
-      <!-- Video 1 -->
-      <h2>Suspensión independiente de doble horquilla como solución a las vibraciones de un vehículo</h2>
-      <div class="video-container" id="video1">
-        <div class="thumbnail-container" onclick="mostrarVideo('1hSL2IGcuZkEY7fP2XP_tp-ei4R1fWWSW', 'video1')">
-          <div class="thumbnail-wrapper">
-            <img src="playvideo2.png" alt="Miniatura Video 1">
-            <!--<img src="https://via.placeholder.com/560x315.png?text=Previsualización+Video+1" alt="Miniatura Video 1"> -->
-            <!-- <i class="fas fa-play-circle play-icon"></i> -->
-          </div>
+      <section>
+        <!-- Video 1 -->
+        <h2>Suspensión independiente de doble horquilla como solución a las vibraciones de un vehículo</h2>
+        <div class="video-container" id="video1">
         </div>
-      </div>
-      <br />
-      <p class="notasvideo">*Seleccionar la opcion "Ventana Externa" (boton super derecho en el video)</p>
+        <br />
+        <p class="notasvideo">*Seleccionar la opcion "Ventana Externa" (boton super derecho en el video)</p>
+      </section>
 
-      <!-- Video 2 -->
-      <h2>Vibración durante el transporte su efecto en perecederos</h2>
-      <div class="video-container" id="video2">
-        <video width="800" height="auto" controls>
-          <!-- <video width="620" height="340" controls></video> -->
-          <!-- <source src="2022 Vibraciones durante el transporte y su efecto en perecederos.mp4" type="video/mp4"> -->
-          <source src="videos/2022 Vibraciones durante el transporte y su efecto en perecederos.mp4" type="video/mp4">
+      <section>
+        <!-- Video 2 -->
+        <h2>Vibración durante el transporte su efecto en perecederos</h2>
+        <div class="video-container" id="video2">
+          <video width="800" height="auto" controls>
+            <source src="videos/2022 Vibraciones durante el transporte y su efecto en perecederos.mp4" type="video/mp4">
 
-          Your browser does not support the video tag.
-        </video>
-      </div>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
     </div>
 
     </div>
 
     <div style="text-align: center;">
-      <!-- <iframe class="Videolink" width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">-->
+      
       </iframe>
     </div>
 
@@ -134,6 +97,10 @@
         var iframe = `<iframe src="https://drive.google.com/file/d/${videoID}/preview" allowfullscreen></iframe>`;
         document.getElementById(containerID).innerHTML = iframe;
       }
+      //Funcion para cargar automaticamente los video insertados de drive
+      window.addEventListener("DOMContentLoaded", function () {
+        mostrarVideo('1hSL2IGcuZkEY7fP2XP_tp-ei4R1fWWSW', 'video1');
+      });
     </script>
   </section>
     <div class="containerflotante">

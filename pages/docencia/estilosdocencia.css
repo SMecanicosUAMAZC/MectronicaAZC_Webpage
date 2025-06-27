@@ -14,8 +14,6 @@
   src: url(../../css/Frutiger\ CE\ 65\ Bold.ttf);
 }
 
-/*https://www.youtube.com/watch?v=bk3Y4heVdFs*/
-
 * {
   margin: 0;
   padding: 0;
@@ -177,13 +175,6 @@ header .navbar ul li ul li ul{
     transition: 2.5s;
   }
   
-/*
-  .tituloh2:hover span{
-    filter: blur(20px);
-    opacity: 0;
-    transform: scale();
-  }
-*/ 
 
 .mural {
   width: 100%;
@@ -289,7 +280,6 @@ h2 {
 }
 
 .imgfondo{
-  /* background-image: url('../principal.jpg'); */
   background-image: url('../../assets/imagenesindex/principal.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -370,7 +360,6 @@ h2 {
 }
 
 #btn-mas:checked ~ .btn-mas .icon-mas2{
-  /*transform: rotate(137deg);*/
   font-size: 20px;
 }
 
