@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Área de Mecanica y Mecatronica</title>
+  <meta name="Mecanica y mecatronica" content="sitio web con entrevistas seminarios cursos y videos de conferencias" />
+  <meta name="Doctor Dr." content="Francisco Beltran Carbajal" />
+  <meta name="Profesor Universidad" content="Univerdidad Autonoma Metropolitana" />
+  <link rel="stylesheet" href="estilocasos de estudio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+
+<body>
+
+
+  <header>
+
+
+    
+    <img class="logomenu" src="../../../assets/imagenesindex/Logo MM-16.png" alt="logo">
+    <img class="logomenu" src="../../../assets/imagenesindex/Logo MM-17.png" alt="cbi">
+    <img class="logomenu" src="../../../assets/imagenesindex/Logo MM-18.png" alt="cbi">
+    <img class="logomenu" src="../../../assets/imagenesindex/Logo MM-19.png" alt="cbi">
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="../../../index.html">Inicio</a></li>
+        <li><a href="../../academicos/academicos.html">Academicos</a></li>
+
+        <li><a href="../../docencia/Docencia.html">Docencia</a></li>
+        <li><a href="../../instalaciones/Instalaciones.html">Instalaciones</a></li>
+        <li><a href="../../eventos/eventosm2.html">Eventos</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="imgfondo">
+    <section class="cuerpo2">
+      <br />
+      <br />
+      <div class="letrasanimadas">
+        <span class="tituloh2">
+          Casos de Estudio
+        </span>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+      <h1>Vídeos</h1>
+
+      <section>
+        <!-- Video 1 -->
+        <h2>Suspensión independiente de doble horquilla como solución a las vibraciones de un vehículo</h2>
+        <div class="video-container" id="video1">
+        </div>
+        <br />
+        <p class="notasvideo">*Seleccionar la opcion "Ventana Externa" (boton super derecho en el video)</p>
+      </section>
+
+      <section>
+        <!-- Video 2 -->
+        <h2>Vibración durante el transporte su efecto en perecederos</h2>
+        <div class="video-container" id="video2">
+          <video width="800" height="auto" controls>
+            <source src="videos/2022 Vibraciones durante el transporte y su efecto en perecederos.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </div>
+
+    </div>
+
+    <div style="text-align: center;">
+      
+      </iframe>
+    </div>
+
+
+    <script>
+      // Función para mostrar el video de Google Drive en un iframe
+      function mostrarVideo(videoID, containerID) {
+        var iframe = `<iframe src="https://drive.google.com/file/d/${videoID}/preview" allowfullscreen></iframe>`;
+        document.getElementById(containerID).innerHTML = iframe;
+      }
+      //Funcion para cargar automaticamente los video insertados de drive
+      window.addEventListener("DOMContentLoaded", function () {
+        mostrarVideo('1hSL2IGcuZkEY7fP2XP_tp-ei4R1fWWSW', 'video1');
+      });
+    </script>
+  </section>
+    <div class="containerflotante">
+      <input type="checkbox" id="btn-mas">
+      <div class="redes">
+        <a href="../../informaciongeneral/infogeneral.html">Informacion General</a>
+        <a href="../../investigacion/Investigacionmain.html">Investigacion</a>
+        <a href="../../proyectosdestacados/proyectosdestacados.html">Proyectos Destacados</a>
+        <a href="#">Casos de Estudio</a>
+      </div>
+      <div class="btn-mas">
+        <label for="btn-mas" class="icon-mas2">Menu</label>
+      </div>
+    </div>
+
+
+    <footer class="piepagina">
+      derechos reservados 2024-2025
+    </footer>
+
+</body>
+
+</html>
